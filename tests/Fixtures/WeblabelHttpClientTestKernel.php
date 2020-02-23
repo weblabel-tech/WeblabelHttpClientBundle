@@ -28,6 +28,7 @@ class WeblabelHttpClientTestKernel extends Kernel
 
     public function registerContainerConfiguration(LoaderInterface $loader)
     {
+        $loader->load(__DIR__.'/config/framework.test.yaml');
         $loader->load(__DIR__.'/config/sensio_framework_extra.test.yaml');
         $loader->load(__DIR__.'/config/services.test.yaml');
     }
