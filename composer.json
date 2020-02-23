@@ -1,6 +1,6 @@
 {
     "name": "weblabel/http-client-bundle",
-    "description": "This bundle integrate http-client with Symfony framework",
+    "description": "This bundle integrates http-client with Symfony framework",
     "type": "symfony-bundle",
     "license": "MIT",
     "authors": [
