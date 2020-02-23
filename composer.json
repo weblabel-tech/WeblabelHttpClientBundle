@@ -1,0 +1,36 @@
+{
+    "name": "weblabel/http-client-bundle",
+    "description": "This bundle integrate http-client with Symfony framework",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adam Kowalski",
+            "email": "adam.kowalski@weblabel.pl"
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "weblabel/http-client": "^1.0.1",
+        "symfony/framework-bundle": "^5.0",
+        "symfony/http-client": "^5.0",
+        "nyholm/psr7": "^1.2"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^5.0",
+        "symfony/yaml": "^5.0",
+        "sensio/framework-extra-bundle": "^5.5",
+        "phpstan/phpstan": "^0.12.3",
+        "phpstan/phpstan-symfony": "^0.12.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Weblabel\\HttpClientBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Weblabel\\HttpClientBundle\\Tests\\": "tests/"
+        }
+    }
+}

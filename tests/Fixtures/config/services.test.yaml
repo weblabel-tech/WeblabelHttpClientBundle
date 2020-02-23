@@ -1,0 +1,12 @@
+services:
+    _defaults:
+        public: true
+
+    test.Psr\Http\Message\RequestFactoryInterface:
+        alias: Psr\Http\Message\RequestFactoryInterface
+
+    test.weblabel_http_client.factory.request.json:
+        alias: weblabel_http_client.factory.request.json
+
+    test.weblabel_http_client.client:
+        alias: weblabel_http_client.client

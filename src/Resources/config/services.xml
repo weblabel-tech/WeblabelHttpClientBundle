@@ -1,0 +1,21 @@
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services
+        https://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="Psr\Http\Message\RequestFactoryInterface" alias="nyholm.psr7.psr17_factory" public="false" />
+
+        <service id="weblabel_http_client.factory.request.json" class="Weblabel\HttpClient\Factory\JsonRequestFactory">
+            <argument type="service" id="Psr\Http\Message\RequestFactoryInterface" />
+            <argument type="service" id="Psr\Http\Message\StreamFactoryInterface" />
+        </service>
+        <service id="weblabel_http_client.factory.request" alias="weblabel_http_client.factory.request.json" public="true"/>
+        <service id="Weblabel\HttpClient\RequestFactory" alias="weblabel_http_client.factory.request"/>
+
+        <service id="weblabel_http_client.client" class="Weblabel\HttpClient\HttpClient">
+            <argument type="service" id="Psr\Http\Client\ClientInterface" />
+            <argument type="tagged_iterator" tag="weblabel_http_client.middleware.request"/>
+        </service>
+    </services>
+</container>
