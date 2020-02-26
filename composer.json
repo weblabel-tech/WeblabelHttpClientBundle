@@ -21,7 +21,8 @@
         "symfony/yaml": "^5.0",
         "sensio/framework-extra-bundle": "^5.5",
         "phpstan/phpstan": "^0.12.3",
-        "phpstan/phpstan-symfony": "^0.12.2"
+        "phpstan/phpstan-symfony": "^0.12.2",
+        "friendsofphp/php-cs-fixer": "^2.16"
     },
     "autoload": {
         "psr-4": {

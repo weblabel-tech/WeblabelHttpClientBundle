@@ -1,6 +1,7 @@
+os: linux
 dist: bionic
 language: php
-sudo: false
+
 cache:
     directories:
         - .phpunit
@@ -10,7 +11,7 @@ env:
     global:
         - PHPUNIT_FLAGS="-v"
 
-matrix:
+jobs:
     fast_finish: true
     include:
         # Minimum supported dependencies with the latest and oldest PHP version
@@ -19,7 +20,7 @@ matrix:
 
         # Test the latest stable release
         - php: 7.4
-          env: COVERAGE=true PHPUNIT_FLAGS="-v --coverage-text"
+          env: COVERAGE=true PHPUNIT_FLAGS="-v --coverage-clover=build/clover.xml"
 
         # Latest commit to master
         - php: 7.4
@@ -39,5 +40,10 @@ install:
 
 script:
     - composer validate --strict --no-check-lock
-    - ./vendor/bin/simple-phpunit $PHPUNIT_FLAGS
+    - ./vendor/bin/php-cs-fixer fix --dry-run
     - ./vendor/bin/phpstan analyse
+    - ./vendor/bin/simple-phpunit $PHPUNIT_FLAGS
+
+after_success:
+    - wget https://scrutinizer-ci.com/ocular.phar
+    - php ocular.phar code-coverage:upload --format=php-clover build/clover.xml
