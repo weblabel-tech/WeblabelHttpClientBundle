@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "php": "^7.4",
+        "php": ">=7.4",
         "weblabel/http-client": "^1.0.1",
         "symfony/framework-bundle": "^5.0",
         "symfony/http-client": "^5.0",
