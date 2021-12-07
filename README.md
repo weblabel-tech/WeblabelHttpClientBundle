@@ -1,10 +1,6 @@
 WeblabelHttpClientBundle
 ============
 
-[![Build Status](https://travis-ci.org/weblabel-tech/WeblabelHttpClientBundle.svg?branch=master)](https://travis-ci.org/weblabel-tech/WeblabelHttpClientBundle)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/weblabel-tech/WeblabelHttpClientBundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/weblabel-tech/WeblabelHttpClientBundle/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/weblabel-tech/WeblabelHttpClientBundle/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/weblabel-tech/WeblabelHttpClientBundle/?branch=master)
-
 Installation
 ============
 
