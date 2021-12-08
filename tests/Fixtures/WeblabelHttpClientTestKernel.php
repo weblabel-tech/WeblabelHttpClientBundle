@@ -7,6 +7,7 @@ namespace Weblabel\HttpClientBundle\Tests\Fixtures;
 use Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle;
 use Symfony\Bundle\FrameworkBundle\FrameworkBundle;
 use Symfony\Component\Config\Loader\LoaderInterface;
+use Symfony\Component\HttpKernel\Bundle\BundleInterface;
 use Symfony\Component\HttpKernel\Kernel;
 use Weblabel\HttpClientBundle\WeblabelHttpClientBundle;
 
@@ -17,6 +18,9 @@ class WeblabelHttpClientTestKernel extends Kernel
         parent::__construct('test', true);
     }
 
+    /**
+     * @return iterable<mixed, BundleInterface>
+     */
     public function registerBundles()
     {
         return [

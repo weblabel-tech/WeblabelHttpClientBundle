@@ -12,17 +12,17 @@
     "require": {
         "php": ">=7.4",
         "weblabel/http-client": "^1.0.1",
-        "symfony/framework-bundle": "^5.0",
-        "symfony/http-client": "^5.0",
-        "sensio/framework-extra-bundle": "^5.5",
-        "nyholm/psr7": "^1.2"
+        "symfony/framework-bundle": "^5.4",
+        "symfony/http-client": "^5.4",
+        "sensio/framework-extra-bundle": "^5.6.1",
+        "nyholm/psr7": "^1.4.1"
     },
     "require-dev": {
-        "symfony/phpunit-bridge": "^5.0",
-        "symfony/yaml": "^5.0",
-        "phpstan/phpstan": "^0.12.3",
-        "phpstan/phpstan-symfony": "^0.12.2",
-        "friendsofphp/php-cs-fixer": "^2.16"
+        "symfony/yaml": "^5.4",
+        "symfony/phpunit-bridge": "^5.4",
+        "phpstan/phpstan": "^0.12.99",
+        "phpstan/phpstan-symfony": "^0.12.44",
+        "friendsofphp/php-cs-fixer": "^3.3"
     },
     "autoload": {
         "psr-4": {

@@ -11,7 +11,7 @@ use Weblabel\HttpClientBundle\DependencyInjection\Compiler\RequestMiddlewareComp
 
 class RequestMiddlewareCompilerPassTest extends TestCase
 {
-    public function test_request_middleware_autoconfiguration()
+    public function testRequestMiddlewareAutoconfiguration()
     {
         $containerBuilder = new ContainerBuilder();
         $httpClientDefinition = $containerBuilder->register('weblabel_http_client.client');
