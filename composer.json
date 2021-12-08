@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": ">=7.4",
-        "weblabel/http-client": "^1.0.1",
+        "weblabel/http-client": "^1.1.1",
         "symfony/framework-bundle": "^5.4",
         "symfony/http-client": "^5.4",
         "sensio/framework-extra-bundle": "^5.6.1",
